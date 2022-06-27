@@ -65,7 +65,7 @@ function catAndMouse(mouse, cat1, cat2) {
 function fizzBuzz(numbers) {
   let strings = [];
   for(let a of numbers){
-    if((a % 3 === 0) && (num % 5 === 0)) {
+    if((a % 3 === 0) && (a % 5 === 0)) {
       strings.push('fizzBuzz');
     } else if (a % 3 === 0) {
       strings.push('fizz');
@@ -101,9 +101,19 @@ return decoded;
 }
 
 // Desafio 10
-function techList() {
-  // seu código aqui
-}
+function techList(tech, person) {
+  let table = []
+  
+  if (tech.length === 0) {
+    return 'Vazio!'
+  }
+  tech.sort()
+  for (let index = 0; index < tech.length; index += 1) {
+    table.push({tech: tech[index], name: person},)
+  }
+  
+  return table
+  }
 
 module.exports = {
   calcArea,
