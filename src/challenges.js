@@ -32,7 +32,17 @@ function footballPoints(a, b) {
 
 // Desafio 6
 function highestCount() {
-  // seu código aqui
+  function highestCount(numbers) {
+    hNumber = 0;
+    hCount = 0;
+    a = Math.max(...numbers);
+    for (index = 0; index < numbers.length; index += 1) {
+      if (numbers[index] === a) {
+        hCount += 1;
+      }
+    }
+    return hCount;
+  }
 }
 
 // Desafio 7
