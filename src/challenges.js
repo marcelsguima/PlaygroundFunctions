@@ -63,7 +63,7 @@ function catAndMouse(mouse, cat1, cat2) {
 
 // Desafio 8
 function fizzBuzz(numbers) {
-  strings = [];
+  let strings = [];
   for(let a of numbers){
     if((a % 3 === 0) && (num % 5 === 0)) {
       strings.push('fizzBuzz');
@@ -80,7 +80,7 @@ function fizzBuzz(numbers) {
 
 // Desafio 9
 function encode(string) {
-  coded;
+  let coded;
       coded = string.replace(/a/g, "1");
       coded = coded.replace(/a/g, "1");
       coded = coded.replace(/e/g, "2");
@@ -89,8 +89,15 @@ function encode(string) {
       coded = coded.replace(/u/g, "5");
 return coded;
 }
-function decode() {
-  // seu código aqui
+function decode(string) {
+  let decoded;
+  decoded = string.replace(/a/g, "1");
+  decoded = decoded.replace(/1/g, "a");
+  decoded = decoded.replace(/2/g, "e");
+  decoded = decoded.replace(/3/g, "i");
+  decoded = decoded.replace(/4/g, "o");
+  decoded = decoded.replace(/5/g, "u");
+return decoded;
 }
 
 // Desafio 10
