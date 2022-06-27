@@ -21,14 +21,14 @@ function splitSentence(frase) {
 
 // Desafio 4
 function concatName(nameFull) {
-  string= nameFull[nameFull.length - 1] + ', ' + nameFull[0];
+  string = nameFull[nameFull.length - 1] + ', ' + nameFull[0];
   return string;
 }
 
 // Desafio 5
-function footballPoints() {
-  // seu código aqui
-}
+function footballPoints(a, b) {
+  return (a*3) + (b)
+   }
 
 // Desafio 6
 function highestCount() {
